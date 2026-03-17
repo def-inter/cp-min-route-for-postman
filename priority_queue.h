@@ -1,5 +1,6 @@
 #pragma once
 #include "pair.h"
+
 template <typename T>
 class priority_queue {
 private:
@@ -40,6 +41,7 @@ public:
 		size++;
 		delete[] arr;
 		arr = parr;
+		
 	}
 	bool empty() {
 		if (size == 0) {
