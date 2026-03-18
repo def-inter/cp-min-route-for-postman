@@ -32,16 +32,30 @@ public:
 	void push(pair wv) {
 		if (size == capacity) {
 			capacity *= 2;
+			pair* temp = new pair[capacity];
+			temp[size] = { -wv.weight,wv.vertex };
+			for (int i = 0; i < size; i++) {
+				temp[i] = arr[i];
+			}
+			delete[] arr;
+			arr = temp;
 		}
-		pair* parr = new pair[capacity];
-		for (int i = 0; i < size; i++) {
-			parr[i] = arr[i];
-		}
-		*(parr + size)  = wv;
+		else {
+			arr[size] = { -wv.weight,wv.vertex };
+		}	
+		int i = size;
 		size++;
-		delete[] arr;
-		arr = parr;
-		
+		while (i > 0) {
+			int parent = (i - 1) / 2;
+			if (arr[i] > arr[parent]) {
+				swap(arr[i], arr[parent]);
+				i = parent;
+			}
+			else {
+				break;
+			}
+		}
+		return;
 	}
 	bool empty() {
 		if (size == 0) {
@@ -51,6 +65,4 @@ public:
 			return false;
 		}
 	}
-
-
 };

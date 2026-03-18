@@ -5,7 +5,6 @@ private:
 	T* arr;
 	int capacity;
 	int size;
-
 public:
 	vector(int c) :capacity(c) {
 		arr = new T[capacity];
@@ -35,5 +34,4 @@ public:
 	T& operator[](int index) {
 		return arr[index];
 	}
-
 };
