@@ -34,4 +34,7 @@ public:
 	T& operator[](int index) {
 		return arr[index];
 	}
+	int size() {
+		return size;
+	}
 };

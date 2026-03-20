@@ -130,11 +130,15 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bfs.h" />
+    <ClInclude Include="dfs.h" />
+    <ClInclude Include="dijkstra.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="pair.h" />
     <ClInclude Include="priority_queue.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="stack.h" />
+    <ClInclude Include="tsp.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

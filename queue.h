@@ -29,8 +29,8 @@ public:
 		int i = size;
 		size++;
 	}
-	T* top() {
-		return &arr[0];
+	T top() {
+		return arr[0];
 	}
 	bool empty() {
 		if (size == 0) {
@@ -38,6 +38,18 @@ public:
 		}
 		else {
 			return false;
+		}
+	}
+	void pop() {
+		T* parr = new T[size - 1];
+		for (int i = 0; i < size - 1; i++) {
+			parr[i] = arr[i + 1];
+		}
+		delete[] arr;
+		arr = parr;
+		size--;
+		if (2 * size == capacity) {
+			capacity = size;
 		}
 	}
 };
