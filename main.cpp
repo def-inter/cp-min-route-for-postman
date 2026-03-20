@@ -3,6 +3,8 @@
 #include "vector.h"
 #include "matrix.h"
 #include "priority_queue.h"
+#include "stack"
+#include "queue"
 
 template<typename T>
 T min(T a, T b);

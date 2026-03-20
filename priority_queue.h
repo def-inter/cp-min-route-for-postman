@@ -33,7 +33,7 @@ public:
 		if (size == capacity) {
 			capacity *= 2;
 			pair* temp = new pair[capacity];
-			temp[size] = { -wv.weight,wv.vertex };
+			temp[size] = { wv.weight,wv.vertex };
 			for (int i = 0; i < size; i++) {
 				temp[i] = arr[i];
 			}
@@ -41,7 +41,7 @@ public:
 			arr = temp;
 		}
 		else {
-			arr[size] = { -wv.weight,wv.vertex };
+			arr[size] = { wv.weight,wv.vertex };
 		}	
 		int i = size;
 		size++;
