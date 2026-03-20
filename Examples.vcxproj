@@ -130,7 +130,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bfs.h" />
     <ClInclude Include="dfs.h" />
     <ClInclude Include="dijkstra.h" />
     <ClInclude Include="matrix.h" />

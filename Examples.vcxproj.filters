@@ -41,9 +41,6 @@
     <ClInclude Include="dfs.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="bfs.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="dijkstra.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
